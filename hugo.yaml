@@ -1,0 +1,48 @@
+baseURL: https://blog.bozzeta.com
+title: Bozzeta 博客
+theme: "PaperMod"
+paginate: 5
+
+defaultContentLanguage: zh-cn
+languages:
+  # 中文
+  zh-cn:
+    title: Bozzeta 博客
+    contentDir: content/zh-cn
+    languageName: 中文
+    weight: 1
+    # 语言标识
+    languageCode: zh-cn
+    menu:
+      main:
+        - name: 归档
+          url: /archives/
+          weight: 1
+        - name: 搜索
+          url: /search/
+          weight: 10
+        - name: 标签
+          url: /tags/
+          weight: 20
+
+
+  # 英文
+  en:
+    title: Bozzeta Blog
+    contentDir: content/en
+    languageName: English
+    weight: 2
+    # 语言标识
+    languageCode: en
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+Params:
+  env: production
+  ShowReadingTime: true
+  ShowToc: true
