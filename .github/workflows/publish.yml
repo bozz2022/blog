@@ -19,8 +19,7 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb   
       
       - name: Install Dart Sass
-        run: |
-          sudo apt-get install -y dart-sass
+        run: sudo snap install dart-sass
 
       - name: Build the Blog
         env:
